@@ -167,3 +167,10 @@ jobs:
           checkout: true
           ssh_key: "${{ secrets.CHECK_SPELLING }}"
           debug: 1
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: test
+        run: echo "Hello world" >> "$GITHUB_STEP_SUMMARY"
