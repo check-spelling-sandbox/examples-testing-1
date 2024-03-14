@@ -166,4 +166,4 @@ jobs:
           experimental_apply_changes_via_bot: 1
           checkout: true
           ssh_key: "${{ secrets.CHECK_SPELLING }}"
-          debug; 1
+          debug: 1
